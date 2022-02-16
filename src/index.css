@@ -1,13 +1,124 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(105, 169, 180);
 }
+
+.center_div{
+  width: 25%;
+  height: 80vh;
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  overflow: scroll;
+}
+
+h1{
+  color: white;
+  background: transparent;
+  background-color: #8566aa;
+  padding: 6px 0 2px 0;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+
+}
+
+input{
+  width: 50%;
+  background: transparent;
+  font-size: 20px;
+  height: 30px;
+  top: 10px;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid #8566aa;
+  margin-bottom: 20px;
+}
+
+.addItem{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #8566aa;
+  margin-left: 10px;
+  color: #f4f4f4;
+  outline: none;
+  font-size: 40px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: greenyellow;
+  color: black;
+}
+
+ol{
+  margin-top: 30px;
+}
+
+.todo-style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+ol li{
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #8566aa;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+
+/* .todo-style .deleteItem{
+  width: 30px;
+  height: 30px;
+}  */
+  .todo-style .deleteItem{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8566aa;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.4);
+
+  }
+
+  .todo-style .deleteItem:hover{
+    background-color: red;
+    color: black;
+    cursor: pointer;
+  }
